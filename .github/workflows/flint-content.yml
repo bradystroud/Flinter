@@ -2,9 +2,7 @@ name: Flint content
 
 on:
   pull_request:
-    branches: ["main"]
-  pull_request_target:
-    branches: ["main"]
+    branches: ["main", "testing-setup"]
 
 jobs:
   build:
