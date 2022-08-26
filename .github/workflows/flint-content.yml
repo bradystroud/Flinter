@@ -13,7 +13,7 @@ jobs:
 
       - name: Flinter.md
         # uses: ./
-        uses: JackDevAU/Flinter@Alpha-v0.0.4
+        uses: bradystroud/Flinter@dev3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           DEBUG: true
