@@ -83,6 +83,9 @@ async function flintCustom(
         fileName,
       });
     } catch (err) {
+      console.log(err);
+
+
       if (DEBUG) {
         setFailed(`Missing directory: ${field}`);
       }
