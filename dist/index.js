@@ -14385,7 +14385,7 @@ const flintRule = async (props) => {
         console.log(`Running custom rule ${ruleName}`);
     }
     if (ruleName) {
-        const { run } = await Promise.resolve().then(() => require(`../.flinter/linters/${ruleName}`));
+        const { run } = await Promise.resolve().then(() => require(`${process.env.GITHUB_WORKSPACE}/.flinter/linters/${ruleName}`));
         const { result, error } = await run(content);
         return {
             result,
